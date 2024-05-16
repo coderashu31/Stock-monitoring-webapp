@@ -16,7 +16,7 @@ interface AlphaVantageResponse {
   };
 }
 
-axios.defaults.baseURL = 'http://localhost:5000';
+axios.defaults.baseURL = 'https://stock-monitoring-webapp.onrender.com';
 
 const Dashboard: React.FC = () => {
   const [symbols, setSymbols] = useState<string[]>([]);
