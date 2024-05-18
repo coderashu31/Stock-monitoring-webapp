@@ -14,3 +14,11 @@ Key features of the platform include:
 5. Database integration: The platform uses a database (e.g., MongoDB) to store user account information and watchlist data, ensuring data persistence and scalability.
    
 Overall, the "STOCK MONITORING WEB APP" provides users with a convenient and efficient way to monitor the latest stock prices of their chosen symbols in real-time, empowering them to make informed investment decisions.
+
+1. Go to client and backend directory and install all the dependencies using command: npm i
+2. To run the front end part visit the Client directory run the command: npm start
+3. Now open the Backend Directory and run the command: npm run dev
+
+Since my project has some issue with multiple user login, to visit the Dashboard page, please type:
+Username: testuser
+Password: testpassword 
