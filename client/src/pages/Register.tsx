@@ -19,7 +19,7 @@ const Register: React.FC = () => {
       console.log(`username: ${username}`);
       console.log(`pass: ${password}`);
       
-      await axios.post('http://localhost:5000/api/auth/register', { username, password });
+      await axios.post('https://stock-monitoring-webapp.onrender.com/api/auth/register', { username, password });
       setLoading(false);
       navigate('/login');
     } catch (err: any) {
