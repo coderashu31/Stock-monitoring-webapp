@@ -33,6 +33,7 @@ const Dashboard: React.FC = () => {
       const response = await axios.get<AlphaVantageResponse[]>('/api/watchlist/stocks', {
         headers: { 'x-auth-token': token || '' }
       });
+      console.log(`here it is the api response: ${response.data}`);
       const data = response.data.reduce((acc: { [key: string]: string }, stock: AlphaVantageResponse) => {
         const symbol = stock['Meta Data']['2. Symbol'];
         const timeSeries = stock['Time Series (1min)'];
